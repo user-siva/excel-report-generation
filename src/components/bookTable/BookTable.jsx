@@ -144,10 +144,10 @@ function BookTable() {
                                         handleCancelClick={handleCancelClick}
                                     />
                                 ) : (
-                                    <ReadOnlyBookRow
-                                        book={book}
-                                        handleEditClick={handleEditClick}
-                                        handleDelete={handleDelete}
+                                    <EditableBookRow
+                                        editFormData={editFormData}
+                                        handleEditFormChange={handleEditFormChange}
+                                        handleCancelClick={handleCancelClick}
                                     />
                                 )
                                 }
